@@ -8,6 +8,6 @@ const challengeController = new ChallengeController();
 
 routes.get('/challenges', challengeController.index);
 
-routes.get('/challenges/:id', challengeController.show);
+routes.get('/challenges/:option', challengeController.show);
 
 export default routes;
