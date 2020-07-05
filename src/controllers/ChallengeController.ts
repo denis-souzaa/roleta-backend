@@ -10,10 +10,7 @@ class ChallengeController {
     }
 
     async show(request: Request, response: Response) {
-        let { option } = request.params;
-
-        if(option === 'pergunta')
-            option = 'verdade';
+        const { option } = request.params;
 
         const challenges = await knex.select('*')
             .from('challenges')
